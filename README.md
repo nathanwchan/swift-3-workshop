@@ -1,7 +1,7 @@
-##Lab-3-prework  
-####1. Ensure in Xcode that you are on the **lab-3** branch.  
+## Lab-3-prework  
+#### 1. Ensure in Xcode that you are on the **lab-3** branch.  
 
-##Lab-3  
+## Lab-3  
 > In this lab we will start to build out a ToDo list Application. This lab will help to teach the most-commonly used UIKit elements.  
 
 > Before we get started I would recommend if you are not familiar with the concept of MVC, to read this article: [MVC Design Pattern](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)  
@@ -14,7 +14,7 @@ Following the MVC design pattern, you're file structure should appear similar to
 ![Imgur](http://i.imgur.com/6UMSbGF.png)  
 
 
-##Building Our Model  
+## Building Our Model  
 First we need to create out Todo class.  
 
 In Xcode, we will create a new separate swift file for this class and we will add it to our **Model** group.  
@@ -156,7 +156,7 @@ Your `TodoList` class should now look like this:
 This completes the building of our model.  
 We will continue adding some additional functionality in the next lab.  
 
-##UIView  
+## UIView  
 > The UIView class defines a rectangular area on the screen and the interfaces for managing the content in that area.  
 
 > UIViews are how we typically display content to the user.  
@@ -170,7 +170,7 @@ For more on UIView's read: [UIView Documentation](https://developer.apple.com/re
 In our project, click on the ViewController.swift file on the left here:  
 ![Imgur](http://i.imgur.com/n4UGja0.png)  
 
-##UIViewController  
+## UIViewController  
 > The UIViewController class provides the infrastructure for managing the views of your iOS apps. A view controller manages a set of views that make up a portion of your app’s user interface. It is responsible for loading and disposing of those views, for managing interactions with those views, and for coordinating responses with any appropriate data objects. View controllers also coordinate their efforts with other controller objects—including other view controllers—and help manage your app’s overall interface.
 
 > Every UIViewController has a **Root View**. This is the primary view that this controller is a wrapper around.
@@ -198,7 +198,7 @@ When you are done researching, we can remove the `self.view` code from before.
 
 > There are 2 primary types of view controllers. There are **content** view controllers that present content to the user, and there are **container** view controllers that manage other view controllers and how they are displayed to the user.  
 
-##UINavigationController  
+## UINavigationController  
 > UINavigationController is a container view controller. It manages *child* view controllers. 
 
 > The UINavigationController class implements a specialized view controller that manages the navigation of hierarchical content. This navigation interface makes it possible to present your data efficiently and makes it easier for the user to navigate that content. You generally use this class as-is but you may also subclass to customize the class behavior.  
@@ -221,7 +221,7 @@ Then up in the menu bar, navigate to *Editor > Embed In > Navigation Controller*
 Your storyboard should now look like this:  
 ![Imgur](http://i.imgur.com/7l6RmXZ.png)  
 
-##UITableView  
+## UITableView  
 
 > A table view displays a list of items in a single column. UITableView is a subclass of UIScrollView, which allows users to scroll through the table, although UITableView allows vertical scrolling only. A table view is made up of zero or more sections, each with its own rows. Sections are identified by their index number within the table view, and rows are identified by their index number within a section. Any section can optionally be preceded by a section header, and optionally be followed by a section footer.
 
@@ -244,7 +244,7 @@ if you see a gap at the top of your tableview, click on the top bar of your View
 Go to the attributes inspector on the right, and make sure that *Adjust Scroll View Insets* is unchecked.  
 ![Imgur](http://i.imgur.com/OTZLRAm.png)  
 
-##UITableViewCell  
+## UITableViewCell  
 > This class defines the attributes and behavior of the cells that appear in a UITableView. This class includes properties and methods for setting and managing cell content and background (including text, images, and custom views), managing the cell selection and highlight state, managing accessory views, and initiating the editing of the cell contents.  
 
 > When creating cells, you can customize them yourself or use one of several predefined styles. The predefined cell styles are the simplest option. With the predefined styles, the cell provides label and image subviews whose positions and styling are fixed.  
@@ -363,7 +363,7 @@ for number in 1...5{
 
 Build and run to see the result.  
 
-####Coding Challenges  
+#### Coding Challenges  
 > If you have extra time, here are some good challenges to attempt on your own.  
 
 1. Look into subclassing `UITableViewCell` and create your own custom subclass.  
