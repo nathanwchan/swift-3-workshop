@@ -157,6 +157,8 @@ let result = set.intersection(setB)
 
 As you may have guessed from the result on the right, this produced a brand new `Set` with only the values that both sets contain in common.  
 
+Take a moment to try the other `Set` methods.  
+
 > For more information on these operations, visit the provided link to [Collection Types](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html)  
 
 ### Arrays  
@@ -167,7 +169,7 @@ Write the following underneath `//Array`:
 ```swift
 let stringsArray = [String]()
 let planetArray = ["Mars", “Jupiter"]
-var intArray = [Int](count: 5, repeatedValue: 0)
+var intArray = [Int](repeating: 0, count: 5)
 ```  
 
 > Note: You can also make all kinds of changes to mutable arrays: adding and removing elements, updating existing values, and moving elements around into a different order.
