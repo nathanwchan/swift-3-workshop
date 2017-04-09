@@ -2,7 +2,7 @@
 #### 1. Ensure in Xcode that you are on the **lab-2** branch.  
 #### 2. Click on `Swift3Workshop.playground` on the left.  
 #### 3. Navigate to the section labeled with `//-----LAB-2-----//`  
-##Lab-2  
+## Lab-2  
 
 ## Classes & Structs  
 > NOTE: When talking about the differences between classes and structs. The **primary** difference is that one is a data type and one is a reference type. A data type is created once and then copied when assigned to other variables. A reference type means that if you assign a value to another variable, both variables are technically pointing to the same object in memory. This will make more sense as we start to code.
