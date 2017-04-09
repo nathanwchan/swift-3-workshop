@@ -6,7 +6,14 @@ import UIKit
 
 
 
+
+//Type Inference
+
+
+
+
 //Numeric Type
+
 
 
 
@@ -14,11 +21,9 @@ import UIKit
 
 
 
-//Type Inference
-
-
 
 //Tuple
+
 
 
 
@@ -26,7 +31,9 @@ import UIKit
 
 
 
+
 //Array
+
 
 
 
@@ -34,7 +41,9 @@ import UIKit
 
 
 
+
 //For-In Loop
+
 
 
 
@@ -42,10 +51,15 @@ import UIKit
 
 
 
+
 //Repeat While
 
 
+
+
 //If Statement
+
+
 
 
 
@@ -53,6 +67,9 @@ import UIKit
 
 
 
+
+
 //Optionals
+
 
 
