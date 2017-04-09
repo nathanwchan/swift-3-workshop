@@ -6,11 +6,11 @@
 
 > Before we get started I would recommend if you are not familiar with the concept of MVC, to read this article: [MVC Design Pattern](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)  
 
-> From this point forward, I may refer to specific types as as either Model, View or Controller objects.
+> From this point forward, I may refer to specific types as either Model, View or Controller objects.
 
 > I would also recommend setting up your file structure on the left to follow this convention and to keep consistent with the rest of this tutorial, but it is not a requirement.  
 
-Following the MVC design pattern, you're file structure should appear similar to this:  
+Following the MVC design pattern, your file structure should appear similar to this:  
 ![Imgur](http://i.imgur.com/6UMSbGF.png)  
 
 
@@ -30,7 +30,7 @@ We should now have an empty `.swift` file to work with.
 
 We will define the class underneath the `import Foundation` line by typing the following:
 ```swift
-class Todo{
+class Todo {
     
     var text: String
     
@@ -76,7 +76,7 @@ This class will manage adding, removing, and storing our `Todo` items.
 Create a new swift file called `TodoList`.  
 Click on the `TodoList.swift` file and under the `import Foundation` add:  
 ```swift
-class TodoList{
+class TodoList {
     
    var allTodos = [Todo]()
     
@@ -116,7 +116,7 @@ Now, we have 5 Methods we need to add to this class.
 
 First, lets add our `add(todo:)` function:  
 ```swift
-func add(todo: Todo){
+func add(todo: Todo) {
     self.allTodos.append(todo)
 }
 ```  
@@ -125,25 +125,25 @@ func add(todo: Todo){
 
 Next, we will add our `remove(todo:)` function right below the above `add` function.  
 ```swift
-func remove(todo: Todo){
-        self.allTodos = self.allTodos.filter{ (item) -> Bool in
-            return item.identifier != todo.identifier
-        }
-    }
+func remove(todo: Todo) {
+    self.allTodos = self.allTodos.filter({ (item) -> Bool in
+        return item.identifier != todo.identifier
+    })
+}
 ```  
 > The `filter` function provides a closure for us to do some processing of the objects in the array. This is an example of what is called a higher order function. This is something we go into detail about in the iOS 401. But, for more information on Swift higher order functions, check out this article:[Higher Order Functions](https://www.weheartswift.com/higher-order-functions-map-filter-reduce-and-more/)  
 
 Now, let's add the `removeAll`, `getTodoAt`, and `count` functions below the `remove` function:  
 ```swift
-func removeAll(){
+func removeAll() {
     self.allTodos.removeAll()
 }
 
-func getTodoAt(index: Int) -> Todo{
+func getTodoAt(index: Int) -> Todo {
     return self.allTodos[index]
 }
 
-func count() -> Int{
+func count() -> Int {
     return self.allTodos.count
 }
 ```  
@@ -353,7 +353,7 @@ Now we are almost done. We just need to give ourselves some starting `Todo` item
 
 To do this, add the following code beneath the above line inside `viewDidLoad`:  
 ```swift
-for number in 1...5{
+for number in 1...5 {
     let todo = Todo(text: "Todo Number \(number)")
     TodoList.shared.add(todo: todo)
 }
