@@ -1,13 +1,13 @@
-##Lab-2-prework  
-####1. Ensure in Xcode that you are on the **lab-2** branch.  
-####2. Click on `Swift3Workshop.playground` on the left.  
-####3. Navigate to the section labeled with `//-----LAB-2-----//`  
+## Lab-2-prework  
+#### 1. Ensure in Xcode that you are on the **lab-2** branch.  
+#### 2. Click on `Swift3Workshop.playground` on the left.  
+#### 3. Navigate to the section labeled with `//-----LAB-2-----//`  
 ##Lab-2  
 
-##Classes & Structs  
+## Classes & Structs  
 > NOTE: When talking about the differences between classes and structs. The **primary** difference is that one is a data type and one is a reference type. A data type is created once and then copied when assigned to other variables. A reference type means that if you assign a value to another variable, both variables are technically pointing to the same object in memory. This will make more sense as we start to code.
 
-###Structures  
+### Structures  
 > Structures, or structs, are one of the named types in Swift that allow you to encapsulate related properties and behaviors. You can define it, give it a name and then use it in your code.  
 
 > Examples of good candidates for structures include:  
@@ -50,7 +50,7 @@ It won't be apparent until we take a look at implementing classes, but structs, 
 
 > Also note that structs give us a "free" initializer. We will discuss initializers in more detail in a moment.  
 
-###Classes  
+### Classes  
 > Classes are much like structures - they are named types, have stored properties and can define their own methods/functions. Classes are reference types instead of value types. They have substantially different capabilities than structures.  
 
 Below the above struct exercise, lets add a new class:
@@ -129,7 +129,7 @@ We can now see on the right that `myPerson.age` gives us 100.  This is because w
 
 > Note: This **copy** vs **reference** concept is important to keep in mind when designing your objects. If you don't pay attention to this, you can end up with issues where you are changing objects values that are not intended to be changed.  
 
-##Protocols  
+## Protocols  
 > Swift protocols define a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol.  
 
 > Protocols allow us to create a kind of list of "rules" that any type adopting the protocol has to follow or implement. A way to define an interface or a template for an actual concrete type such as a struct or class or enumeration. With a protocol, you can define a common set of behaviors and then define the actual types that implement them.  
@@ -181,7 +181,7 @@ This is a great tool to take advantage of as much as possible. To go with the au
 
 > We will see how we can have very powerful and dynamic protocols through extensions in a little bit.  
 
-##Inheritance  
+## Inheritance  
 > An important concept to understand when developing in Swift is **Inheritance**. Inheritance allows us to create complex objects that inherit functionality from a `superClass`. 
 
 Let's take a quick look at our `Person` class.  
@@ -232,7 +232,7 @@ Your playground should now look like this:
 
 > Note that inside the `ageInDogYears` function, we can access a property called `age`. This is because of the inheritance of `Student` from `Person`. `Person` has a property called `age` and because `Student` inherits from `Person`, `Student` also has an `age` property.  
 
-##Extensions  
+## Extensions  
 > Extensions add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code (known as retroactive modeling). Extensions are similar to categories in Objective-C.  
 
 For more information on Extensions, read: [Apple Documentation - Extensions](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151)  
@@ -274,7 +274,7 @@ let myString = "This is a test string"
 myString.length()
 ```  
 
-##Functions  
+## Functions  
 > Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed. A function lets you define a block of code that performs a given task. Functions take can take in parameters and can return values.  
 
 > As we've already seen, you define a function using the `func` keyword. After that comes the name of the function, followed by `()`. After the parentheses comes an opening brace, followed by the code you want to run in the function, followed by a closing brace.
@@ -360,7 +360,7 @@ This should "open" the callback function into a closure.
 Your playground should look like this before moving forward:  
 ![Imgur](http://i.imgur.com/xUl1UOd.png)  
 
-##Closures  
+## Closures  
 > Closures are a difficult concept to understand for new Swift developers. A closure is really just a function with no name. You can assign them to variables and pass them around like any other value.  
 
 > Closures are so named because they have the ability to "close over" the variables and constants within the closure's own scope. This simply means that if a closure wants to access, store and manipulate the value of any variable or constant from the surrounding context, it can.  
@@ -386,7 +386,7 @@ Because of the difficulty typically involved with understanding closures we prac
 
 To read more on closures, read the Apple docs [Here](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID94).
 
-####Coding Challenges  
+#### Coding Challenges  
 > If you have extra time, here are some good challenges to attempt on your own. Please hold any questions related to these challenges till the end of the day to allow instructors to keep pace for the day.  
 
 1. Create a function that takes in an array of `Int`'s, loops through them, and returns a sum of all the numbers as an `Int`.  
@@ -395,11 +395,11 @@ To read more on closures, read the Apple docs [Here](https://developer.apple.com
 
 3. Create a new class of your choice that conforms to the `DogYears` protocol, but changes the default implementation.  
 
-##Before Continuing  
-####1. With the `CFS3ToDoList.xcodeproj` open in Xcode, go to the top menu bar and select source control.  
-####2. Select `commit` to commit the work you have done up to this point.  
-####3. Make sure to leave a detailed commit message for yourself.  
-####4. Once you have committed your changes, go back to the Source Control menu.  
-####5. Hover over your project and select `Switch to Branch`.  
-####6. Select Lab-3. You may see all the lab-2 code jump into the project.  
+## Before Continuing  
+#### 1. With the `CFS3ToDoList.xcodeproj` open in Xcode, go to the top menu bar and select source control.  
+#### 2. Select `commit` to commit the work you have done up to this point.  
+#### 3. Make sure to leave a detailed commit message for yourself.  
+#### 4. Once you have committed your changes, go back to the Source Control menu.  
+#### 5. Hover over your project and select `Switch to Branch`.  
+#### 6. Select Lab-3. You may see all the lab-2 code jump into the project.  
   > This is to ensure that all participants can keep pace with the workshop.  
