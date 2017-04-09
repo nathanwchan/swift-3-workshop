@@ -36,6 +36,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6609791E9ADF0C004E7FBC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1A66097A1E9ADF13004E7FBC /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		1AB4B3A91D904C5F008DD0F0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				1AB4B3C81D904E74008DD0F0 /* Swift3Workshop.playground */,
+				1A66097A1E9ADF13004E7FBC /* view */,
+				1A6609791E9ADF0C004E7FBC /* model */,
 				1AB4B3CA1D9054BE008DD0F0 /* controllers */,
 				1AB4B3C91D9054B0008DD0F0 /* storyboards */,
 				1AB4B3C71D904D75008DD0F0 /* supporting */,
