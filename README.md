@@ -465,7 +465,7 @@ if surveyAnswer != nil {
 In our case, the value is nil because we never assigned it to a specific value.  
 Lets change that.  
 
-beteen the declaration of `var surveyAnswer: String?` and our `if` statement, lets assign a value to surveyAnswer:
+between the declaration of `var surveyAnswer: String?` and our `if` statement, lets assign a value to surveyAnswer:
 ```swift
 surveyAnswer = "This was so much fun!!!"
 ```  
@@ -474,7 +474,7 @@ Your if statement should now hit and should show `SurveyAnswer is not nil.` on t
 ![Imgur](http://i.imgur.com/spAuwpw.png)  
 
 #### Optional Binding  
-> You use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable. Optional binding can be used with if and while statements to check for a value inside an optional, and to extract that value into a constant or variable, as part of a single action.  
+> You use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable. Optional binding can be used with `if` and `while` statements to check for a value inside an optional, and to extract that value into a constant or variable, as part of a single action.  
 
 So, we can "unwrap" our optionals, by adding the following statement to the bottom of our playground:
 
