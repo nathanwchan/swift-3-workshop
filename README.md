@@ -1,7 +1,7 @@
-##Lab-4-prework  
-####1. Ensure in Xcode that you are on the **lab-4** branch.  
+## Lab-4-prework  
+#### 1. Ensure in Xcode that you are on the **lab-4** branch.  
 
-##Auto Layout
+## Auto Layout
 > Auto Layout is a constraint-based layout system. Auto Layout is the only way to go for properly laying out your interface for multiple screen sizes. Auto Layout is extremely flexible and feature rich. Constraints are the fundamental building block of Auto Layout. Constraints express rules for the layout of elements in your interface.
 
 > Constraints allow us to create relationships between UI objects.
@@ -38,7 +38,7 @@ Notice how now the `tableView` takes the entire screen, even when rotated.
 
 We will continue to use Auto Layout to manage the layout of our UI for the duration of the tutorial.  
 
-##Segues  
+## Segues  
 > A UIStoryboardSegue object is responsible for performing the visual transition between two view controllers. In addition, segue objects are used to prepare for the transition from one view controller to another. Segue objects contain information about the view controllers involved in a transition. When a segue is triggered, but before the visual transition occurs, the storyboard runtime calls the current view controller’s prepareForSegue:sender: method so that it can pass any needed data to the view controller that is about to be displayed.  
 
 In storyboard, go to our ViewController.  
@@ -69,7 +69,7 @@ This is a segue.
 
 Run your app and press the `+` to see that it presents the view controller modally, up from the bottom.  
 
-##UIButton  
+## UIButton  
 > Buttons can do more than just work with storyboard segues. They can also have *actions* that they are associated with. This looks similar to when we created the *outlet* to our tableView. These *actions* are just functions that fire when the user presses the button. We can specify whatever code we'd like.  
 
 Before we continue, we need another subclass of UIViewController for our new View Controller we added.  
@@ -124,7 +124,7 @@ dismiss(animated: true, completion: nil)
 
 This will give us a way to dismiss this view controller.  
 
-##UILabel  
+## UILabel  
 > The UILabel class implements a read-only text view. You can use this class to draw one or multiple lines of static text, such as those you might use to identify other parts of your user interface. The base UILabel class provides support for both simple and complex styling of the label text. You can also control over aspects of appearance, such as whether the label uses a shadow or draws with a highlight. If needed, you can customize the appearance of your text further by subclassing.  
 
 > Labels are much like buttons when it comes to Auto Layout. They have an intrinsic size so we are required to implement less constraints.  
@@ -143,7 +143,7 @@ Click the `align` button to the left of the `pin` button and select `Horizontall
 
 Again, if you see yellow warning lines, go through the same process as above to `Update Frames`.  
 
-##UITextField  
+## UITextField  
 > A UITextField object displays an editable text area in your interface. You use text fields to gather text-based input from the user using the onscreen keyboard. The keyboard is configurable for many different types of input such as plain text, emails, numbers, and so on. Text fields use the target-action mechanism and a delegate object to report changes made during the course of editing.
 
 > Using delegation, we can respond to changes that occur in the UITextfield.  
@@ -216,12 +216,12 @@ Your `ViewController.swift` class should look something like this:
 
 Run your application. Our `tableView` should appear empty at first, but add a new Todo item. It should populate into our list of `Todo`'s.  
 
-##Wrap up  
+## Wrap up  
 We have covered quite a bit of material today. I would suggest going through and working the Coding Challenges on your own and continuing to research each of the topics we discussed today.  
 
 > Dont forget to commit your work! You worked hard to get here!  
 
-####Coding Challenges  
+#### Coding Challenges  
 > Here are some good challenges to attempt on your own.  
 
 1. There is an issue with the code above. When we create our `TodoList` and close the app, then relaunch, our `TodoList` is empty. This is where Persistence would come into play. To implement persistence into your TodoList Application, I would recommend following this tutorial here: [Persistence Tutorial](https://www.hackingwithswift.com/read/12/1/setting-up)  
