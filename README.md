@@ -35,7 +35,7 @@ Remove `myConstant = 10` to clear the error.
 > As an iOS Developer, one of the best practices we follow is that every value we declare should start as a `let` constant. If you need to change the value, go back and make it a `var` declaration when needed.  This helps to make sure you never accidentally have a value change, or unnecessarily change a value that you did not intend to.  
 
 ## Type Inference  
-> Note: You don’t always have to write types explicitly. Providing a value when you create a constant or variable lets the compiler infer its type. In the example above, the compiler infers that myVariable and myConstant are integers because their initial values are integers.  
+> Note: You don’t always have to write types explicitly. Providing a value when you create a constant or variable lets the compiler infer its type. In the example above, the compiler infers that `myVariable` and `myConstant` are integers because their initial values are integers.  
 
 In the playground, below the above code, Add the following:  
 ```swift
@@ -223,7 +223,7 @@ dictionaryTwo["location"] =  "Home"
 The above line adds a new *key* to `dictionaryTwo` called "location" and sets its value to be the String "Home".  
 
 This is great, but Mars isn't our home...At least for most of us.  
-So let's change the value for the "Name" key.  
+So let's change the value for the "name" key.  
 We do this by adding the following line:  
 ```swift
 dictionaryTwo["name"] =  "Earth"
@@ -253,7 +253,7 @@ We will talk more about the `...` a little later.
 But now let's loop over the objects in one of our arrays from earlier.  
 Under the above `for-in` loop, type the following:  
 ```swift
-for value in intArray{
+for value in intArray {
     print(value)
 }
 ```  
@@ -267,7 +267,7 @@ For dictionaries, we can loop through and get a reference to both the *key* and 
 
 Below our previous loop, let's practice this by looping through our `dictionaryTwo`:  
 ```swift
-for (key, value) in dictionaryTwo{
+for (key, value) in dictionaryTwo {
     print("Key: \(key), Value: \(value)")
 }
 ```  
@@ -299,9 +299,9 @@ Underneath the `//Repeat While` type:
 ```swift
 var repeatCount = 100
 
-repeat{
+repeat {
     print("This will print at least once.")
-}while repeatCount < 10
+} while repeatCount < 10
 ```  
 As you can see, `repeatCount` starts with a value well over 10, which is the condition of the loop. But we still get one execution of the code inside the repeat statement scope.  
 
@@ -458,7 +458,7 @@ var surveyAnswer: String?
 
 Then, we can implement the following `if` statement to check if the value is `nil`:  
 ```swift
-if surveyAnswer != nil{
+if surveyAnswer != nil {
     print("SurveyAnswer is not nil.")
 }
 ```  
@@ -479,7 +479,7 @@ Your if statement should now hit and should show `SurveyAnswer is not nil.` on t
 So, we can "unwrap" our optionals, by adding the following statement to the bottom of our playground:
 
 ```swift
-if let surveyAnswer = surveyAnswer{
+if let surveyAnswer = surveyAnswer {
     print(surveyAnswer)
 }
 ```  
