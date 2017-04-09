@@ -1,25 +1,25 @@
-##Lab-1-prework  
-####1. Open the `CFS3ToDoList.xcodeproj` using Xcode 8, provided in this repository.  
-####2. Ensure in Xcode that you are on the **lab-1** branch.  
+## Lab-1-prework  
+#### 1. Open the `CFS3ToDoList.xcodeproj` using Xcode 8, provided in this repository.  
+#### 2. Ensure in Xcode that you are on the **lab-1** branch.  
 ![Imgur](http://i.imgur.com/3hl3ne1.png)  
-####3. In the `CFS3ToDoList` folder on the left, click on `Swift3Workshop.playground`.  
+#### 3. In the `CFS3ToDoList` folder on the left, click on `Swift3Workshop.playground`.  
 
-##Lab-1  
-##Constants and Variables  
+## Lab-1  
+## Constants and Variables  
 > Use `let` to make a constant and `var` to make a variable.  
 The value of a constant doesn’t need to be known at compile time, but you must assign it a value exactly once.  
 This means you can use constants to name a value that you determine once but use in many places.  
 
 
 
-####1. In `Swift3Workshop.playground`, under `//Constants and Variables`. Type the following:  
+#### 1. In `Swift3Workshop.playground`, under `//Constants and Variables`. Type the following:  
 ```swift
 var myVariable = 42
 myVariable = 50
 ```  
 This is creating a variable in Swift. This variable is mutable, meaning we can change the value that is assigned to it.  
 
-####2. Next, we will declare a constant, meaning it's value cannot be changed or mutated.  
+#### 2. Next, we will declare a constant, meaning it's value cannot be changed or mutated.  
 ```swift
 let myConstant = 4
 myConstant = 10
@@ -34,7 +34,7 @@ Remove `myConstant = 10` to clear the error.
 
 > As an iOS Developer, one of the best practices we follow is that every value we declare should start as a `let` constant. If you need to change the value, go back and make it a `var` declaration when needed.  This helps to make sure you never accidentally have a value change, or unnecessarily change a value that you did not intend to.  
 
-##Type Inference  
+## Type Inference  
 > Note: You don’t always have to write types explicitly. Providing a value when you create a constant or variable lets the compiler infer its type. In the example above, the compiler infers that myVariable and myConstant are integers because their initial values are integers.  
 
 In the playground, below the above code, Add the following:  
@@ -48,8 +48,8 @@ let myName = "Adam"
 
 This works great most of the time. But, be aware that the compiler cannot ALWAYS make this inference accurately. In some situations, we will need to explicitly say what type a value has. We will see this later in lab.  
 
-##Numeric Types  
-###Integers  
+## Numeric Types  
+### Integers  
 > Note: Integers are whole numbers with no fractional component, such as 42 and -23. Integers are either signed (positive, zero, or negative) or unsigned (positive or zero).  
 
 > Note: Swift provides signed and unsigned integers in 8, 16, 32, and 64 bit forms. These integers follow a naming convention similar to C, in that an 8-bit unsigned integer is of type UInt8, and a 32-bit signed integer is of type Int32. Like all types in Swift, these integer types have capitalized names.  
@@ -68,7 +68,7 @@ This will show you the max and min values of the `UInt8` type.
 
 > Unless you need to work with a specific size of integer, always use Int for integer values in your code. This aids code consistency and interoperability. Even on 32-bit platforms, Int can store any value between -2,147,483,648 and 2,147,483,647, and is large enough for many integer ranges.
 
-###Floating Point Values  
+### Floating Point Values  
 > Note: In Swift 3, `Double` represents a 64-bit floating-point number.
 `Float` represents a 32-bit floating-point number. Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits.  
 
@@ -85,7 +85,7 @@ Your playground should now look similar to the following:
 
 Play with the above values for a moment to get a feel for the accuracy of both.  
 
-##Strings  
+## Strings  
 > Note: A string is a series of characters, such as "hello, world" or "albatross". Swift strings are represented by the String type. The contents of a String can be accessed in various ways, including as a collection of Character values.
 
 In Playground, under `//String`, type the following:  
@@ -113,7 +113,7 @@ fullName = firstName + " " + lastName
 ```  
 
 There are many other powerful operations for String manipulation to look into. Check out the documentation here: [Swift 3 Programming Guide - Strings](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html)  
-##Tuples  
+## Tuples  
 > Note: A tuple is a type that represents data composed of more than one value of any type. Use a tuple to make a compound value—for example, to return multiple values from a function. The elements of a tuple can be referred to either by name or by number.  
 
 In playground, under `//Tuples`, type the following:  
@@ -125,10 +125,10 @@ Then access values in the tuple with the following:
 tuple.description
 ```
 
-##Collection Types  
+## Collection Types  
 > Great resource for Collection Types: [Here](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html)  
 
-###Sets  
+### Sets  
 > A set is an unordered collection of unique values of the same type. It can be extremely useful when you want to ensure that an item doesn't appear more than once in your collection, and the order of your items isn't important. Sets also do not have type inference. You **must** be explicit when declaring `Set` types.  
 
 In playground, under `//Set`, type the following:  
@@ -159,7 +159,7 @@ As you may have guessed from the result on the right, this produced a brand new 
 
 > For more information on these operations, visit the provided link to [Collection Types](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html)  
 
-###Arrays  
+### Arrays  
 > An array is an ordered collection of values of the same type. The elements in the array are zero-indexed, which means the index of the first element is 0. Arrays are useful when you want to store your items in a particular order.  
 
 In our playground, let's create a few different arrays in a few different ways!  
@@ -199,7 +199,7 @@ let removedValue = intArray.remove(at: 7)
 Your playground should, by this point, look similar to the following:  
 ![Imgur](http://i.imgur.com/UoXLvie.png)  
 
-###Dictionaries  
+### Dictionaries  
 > A dictionary is an unordered collection of pairs, where each pair is comprised of a key and a value. Dictionaries are useful when you want to look up values by means of an identifier. The same key can't appear twice in a dictionary, but different keys may point to the same value. All keys have to be of the same type and all values have to be of the same type.
 
 Let's take a look at how to declare a dictionary.  
@@ -229,12 +229,12 @@ dictionaryTwo["name"] =  "Earth"
 
 > There are some very powerful uses for dictionaries. For more information of what they are capable of doing and what other methods they have, check out Apple's documentation here: [Dictionaries](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html)  
 
-##Control Flow  
+## Control Flow  
 > Swift provides a variety of control flow statements. These include `while` loops, `if` statements, `switch` statements, and more to execute different branches of code based on certain conditions.
 
 > Swift also provides a `for-in` loop that makes it easy to iterate over arrays, dictionaries, ranges, strings, and other sequences.
 
-###For-In Loops  
+### For-In Loops  
 > Note: You use the for-in loop to iterate over a sequence, such as ranges of numbers, items in an array, or characters in a string. Swift 3 deprecated the traditional `for i` for loop.  
 
 Let's start by declaring a simple for loop that loops 5 times.
@@ -272,7 +272,7 @@ for (key, value) in dictionaryTwo{
 
 We can see that our matching keys and values are printed to the console.  
 
-###While Loops and Repeat While  
+### While Loops and Repeat While  
 > A while loop performs a set of statements until a condition becomes false. These kinds of loops are best used when the number of iterations is not known before the first iteration begins. Swift provides two kinds of while loops.
 
 1. `while` evaluates its condition at the start of each pass through the loop.  
@@ -303,7 +303,7 @@ repeat{
 ```  
 As you can see, `repeatCount` starts with a value well over 10, which is the condition of the loop. But we still get one execution of the code inside the repeat statement scope.  
 
-###If Statements  
+### If Statements  
 > If statements in Swift are very much like `if` statements in other languages. In its simplest form, the if statement has a single if condition. It executes a set of statements only if that condition is true.  
 
 We will try a quick exaple of this.  
@@ -342,7 +342,7 @@ if temperatureInFahrenheit <= 32 {
 ```  
 Now, if we manipulate the `temperatureInFahrenheit` value, we can see it handles each of our situations.  
 
-###Switch Statements  
+### Switch Statements  
 > Swift’s switch statement is considerably more powerful than its counterpart in many C-like languages. Because the cases of a switch statement do not fall through to the next case in Swift, it avoids common C errors caused by missing break statements.  
 > A switch statement considers a value and compares it against several possible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully. A switch statement provides an alternative to the if statement for responding to multiple potential states.  
 
@@ -364,7 +364,7 @@ default:
 }
 ```  
 
-####Ranges  
+#### Ranges  
 Ranges allow developers to specify a range. Let's take a look.  
 
 Underneath the above `switch` statement, let's add:
@@ -440,7 +440,7 @@ By giving the tuple named parameters, we can access these parameters as we would
 At this point, your playground should look something like this:  
 ![Imgur](http://i.imgur.com/62zC1fy.png)  
 
-##Optionals  
+## Optionals  
 > Optionals can be tricky, for more information I would recommend reading Apple's documentation on optionals [Here](https://developer.apple.com/reference/swift/optional).  
 
 > Swift introduced optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using nil with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they are at the heart of many of Swift’s most powerful features.
@@ -471,7 +471,7 @@ surveyAnswer = "This was so much fun!!!"
 Your if statement should now hit and should show `SurveyAnswer is not nil.` on the right like so:
 ![Imgur](http://i.imgur.com/spAuwpw.png)  
 
-####Optional Binding  
+#### Optional Binding  
 > You use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable. Optional binding can be used with if and while statements to check for a value inside an optional, and to extract that value into a constant or variable, as part of a single action.  
 
 So, we can "unwrap" our optionals, by adding the following statement to the bottom of our playground:
@@ -485,7 +485,7 @@ The above basically says if I can unwrap this value, then let me use it as a non
 
 If this value is nil, the `if let` statement is passed over.  
 
-####Coding Challenges
+#### Coding Challenges
 > If you have extra time, here are some good challenges to attempt on your own. Please hold any questions related to these challenges till the end of the day to allow instructors to keep pace for the day.  
 
 1. Declare an array of strings containing all the names of the planets within our solar system. Create a for loop to iterate over each planet name. Inside the for loop, write an if statement that checks if the array contains a value for "Earth". If it does, print("YAY Earth!").  
@@ -494,12 +494,12 @@ If this value is nil, the `if let` statement is passed over.
 
 3. Declare a Dictionary of type `[Int: String]`. Give it some default values. Then, remove a value for a specific key. Lastly, once the value has been removed, print the count of objects in the Dictionary to the console. This will take some research.  
 
-##Before Continuing
-####1. With the `CFS3ToDoList.xcodeproj` open in Xcode, go to the top menu bar and select source control.  
-####2. Select `commit` to commit the work you have done up to this point.  
-####3. Make sure to leave a detailed commit message for yourself.  
-####4. Once you have commited your changes, go back to the Source Control menu.
-####5. Hover over your project and select `Switch to Branch`.  
-####6. Select Lab-2. You may see all the lab-1 code jump into the project.  
+## Before Continuing
+#### 1. With the `CFS3ToDoList.xcodeproj` open in Xcode, go to the top menu bar and select source control.  
+#### 2. Select `commit` to commit the work you have done up to this point.  
+#### 3. Make sure to leave a detailed commit message for yourself.  
+#### 4. Once you have commited your changes, go back to the Source Control menu.
+#### 5. Hover over your project and select `Switch to Branch`.  
+#### 6. Select Lab-2. You may see all the lab-1 code jump into the project.  
   > This is to ensure that all participants can keep pace with the workshop.  
   
