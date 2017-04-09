@@ -20,7 +20,7 @@
 In our playground, find the `//Classes and Structs` line.  
 Let's start by defining a simple `struct`.  
 ```swift
-struct ScreenLocation{  
+struct ScreenLocation {  
     var x: Int
     var y: Int
 }
@@ -55,7 +55,7 @@ It won't be apparent until we take a look at implementing classes, but structs, 
 
 Below the above struct exercise, lets add a new class:
 ```swift
-class Person{
+class Person {
     var name: String
     var age: Int
 }
@@ -65,7 +65,7 @@ class Person{
 
 Change the above `Person` class to add the following `init` function:
 ```swift
-class Person{
+class Person {
     
     var name: String
     var age: Int
@@ -90,7 +90,7 @@ let myPerson = Person(name: "Adam", age: 30)
 
 We can do some powerful things with initializers. Let's try changing the above `init(name: String, age: Int)` to the following:
 ```swift
-class Person{
+class Person {
     
     var name: String
     var age: Int
@@ -139,7 +139,7 @@ A great resource for Protocols: [Apple Documentation](https://developer.apple.co
 In our playground, find the line that reads `//Protocols`.  
 Now, create the following protocol:  
 ```swift
-protocol DogYears{
+protocol DogYears {
     var age : Int { set get }
     
     func ageInDogYears() -> Int
@@ -155,7 +155,7 @@ protocol DogYears{
 Now, below the above protocol, we can create a new class.  
 Let's try the following:  
 ```swift
-class Dog: DogYears{
+class Dog: DogYears {
     
 }
 ```  
@@ -164,7 +164,7 @@ Notice the error that we get. This is because we have not yet implemented the me
 Let's get the dog class to conform to the protocol.  
 Change the `Dog` class to the following:  
 ```swift
-class Dog: DogYears{
+class Dog: DogYears {
     
     var age = 1
     
@@ -191,7 +191,7 @@ Now lets create a subclass of `Person` called `Student`.
 Find the `//Inheritance` line.  
 Beneath it add the following:  
 ```swift
-class Student: Person{
+class Student: Person {
     
     var studentID: String?
     var classNumber: Int?
@@ -216,7 +216,7 @@ student1.studentID = "s786sf67822g29"
 Let's make our new `Student` class conform to the `DogYears` protocol.  
 Change your above implementation of the `Student` class to the following:  
 ```swift
-class Student: Person, DogYears{
+class Student: Person, DogYears {
     
     var studentID: String?
     var classNumber: Int?
@@ -242,7 +242,7 @@ For more information on Extensions, read: [Apple Documentation - Extensions](htt
 Back in our playground, find the `DogYears` protocol declaration and add the following:  
 ```swift
 extension DogYears {
-    func ageInDogYears() -> Int{
+    func ageInDogYears() -> Int {
         return age * 7
     }
 }
@@ -259,9 +259,9 @@ We can also use Extensions to extend classes that are not directly available to 
 
 In our playground, find the line `//Extension` and add the following:  
 ```swift
-extension String{
+extension String {
     
-    func length()-> Int{
+    func length() -> Int {
         return self.characters.count
     }
     
@@ -275,7 +275,7 @@ myString.length()
 ```  
 
 ## Functions  
-> Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed. A function lets you define a block of code that performs a given task. Functions take can take in parameters and can return values.  
+> Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed. A function lets you define a block of code that performs a given task. Functions can take in parameters and can return values.  
 
 > As we've already seen, you define a function using the `func` keyword. After that comes the name of the function, followed by `()`. After the parentheses comes an opening brace, followed by the code you want to run in the function, followed by a closing brace.
 
@@ -320,11 +320,10 @@ As you can see, we now have 2 independant ways of calling our `greet()` function
 
 Under the above `greet()` line of code in our playground, write the following:  
 ```swift
-func addThese(numbers: Int...)-> Int{
-    
+func addThese(numbers: Int...) -> Int {
     var total = 0
     
-    for number in numbers{
+    for number in numbers {
         total += number
     }
     
@@ -344,7 +343,7 @@ We should see a 15 on the left like so:
 
 In our playground, under the `addThese(numbers: 0,1,2,3,4,5)` line above, add the following:  
 ```swift
-func changeStuff(number: Int, callback:(Int)->()){
+func changeStuff(number: Int, callback:(Int)->()) {
     callback(number * number)
 }
 ```  
