@@ -226,4 +226,4 @@ We have covered quite a bit of material today. I would suggest going through and
 
 1. There is an issue with the code above. When we create our `TodoList` and close the app, then relaunch, our `TodoList` is empty. This is where Persistence would come into play. To implement persistence into your TodoList Application, I would recommend following this tutorial here: [Persistence Tutorial](https://www.hackingwithswift.com/read/12/1/setting-up)  
 
-2. Another issue with our TodoList is that users cannot remove Todo items once they are completed. Look into `UITableViewDelegate`. There is a method called `tableView(_:commitEditingStyle:forRowAt:)` that will allow us to implement a "Swipe to Delete". This method will use our `TodoList.share.remove()` function to remove the `Todo` for the specific index.  
+2. Another issue with our TodoList is that users cannot remove Todo items once they are completed. Look into `UITableViewDelegate`. There is a method called `tableView(_:commitEditingStyle:forRowAt:)` that will allow us to implement a "Swipe to Delete". This method will use our `TodoList.shared.remove()` function to remove the `Todo` for the specific index.  
